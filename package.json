@@ -3,11 +3,12 @@
   "version": "1.0.6",
   "description": "A project to create new components",
   "main": "index.js",
+  "type": "module",
   "bin": {
-    "new-components": "node ./bin/new-components.js"
+    "new-components": "node ./bin/input-user.js"
   },
   "scripts": {
-    "new": "node ./bin/new-components.js",
+    "new": "node ./bin/input-user.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,11 +18,9 @@
   "author": "Mau Webs",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.3.0",
-    "cli-color": "^2.0.4",
-    "enquirer": "^2.4.1",
-    "figlet": "^1.7.0",
+    "axios": "^1.7.5",
     "fs-extra": "^11.2.0",
-    "gradient-string": "^2.0.2"
+    "gradient-string": "^2.0.2",
+    "inquirer": "^10.1.8"
   }
 }
