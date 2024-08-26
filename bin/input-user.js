@@ -10,6 +10,7 @@ const question = {
   choices: ['Template1', 'Template2', 'Template3'],
 };
 
+
 inquirer.prompt(question).then(async (answer) => {
   switch (answer.componentType) {
     case 'Template1':

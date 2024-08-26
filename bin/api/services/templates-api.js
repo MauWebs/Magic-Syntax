@@ -9,8 +9,8 @@ async function fetchData1() {
         return response.data;
     } catch (error) {
         console.error('Error haciendo la petición:', error);
-    }
-}
+    };
+};
 
 async function fetchData2() {
     try {
@@ -18,8 +18,8 @@ async function fetchData2() {
         return response.data;
     } catch (error) {
         console.error('Error haciendo la petición:', error);
-    }
-}
+    };
+};
 
 async function fetchData3() {
     try {
@@ -27,7 +27,7 @@ async function fetchData3() {
         return response.data;
     } catch (error) {
         console.error('Error haciendo la petición:', error);
-    }
-}
+    };
+};
 
 export { fetchData1, fetchData2, fetchData3 };
