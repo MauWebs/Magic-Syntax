@@ -10,22 +10,21 @@ const __dirname = path.dirname(__filename);
 
 const createFile = (fileName, content) => {
 
-    const dirPath = path.join(process.cwd(), 'src', 'components');
-    const filePath = path.join(dirPath, fileName);
+  const dirPath = path.join(process.cwd(), 'src', 'components');
+  const filePath = path.join(dirPath, fileName);
 
-    fs.ensureDirSync(dirPath);
+  fs.ensureDirSync(dirPath);
+  fs.outputFileSync(filePath, content);
 
-    fs.outputFileSync(filePath, content);
+  const asciiArtPath = path.join(__dirname, '..', 'tx', 'successfully.txt');
 
-    const asciiArtPath = path.join(__dirname, '..', 'tx', 'successfully.txt');
-
-    fs.readFile(asciiArtPath, 'utf8', (err, data) => {
-        if (err) {
-            console.error('Error reading the file:', err);
-            return;
-        }
-        console.log(gradient(['violet', '#F5A875'])(data));
-    });
+  fs.readFile(asciiArtPath, 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading the file:', err);
+      return;
+    }
+    console.log(gradient(['violet', '#F5A875'])(data));
+  });
 
 };
 
