@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "new-components": "node ./bin/input-user.js"
+    "new-component": "node ./bin/input-user.js"
   },
   "scripts": {
-    "new-components": "node ./bin/input-user.js",
+    "new-component": "node ./bin/input-user.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,10 +19,9 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
     "fs-extra": "^11.2.0",
     "gradient-string": "^2.0.2",
-    "inquirer": "^10.1.8"
+    "inquirer": "^10.1.8",
+    "node-machine-id": "^1.1.12"
   }
 }
